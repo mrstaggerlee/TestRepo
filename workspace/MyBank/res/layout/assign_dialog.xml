@@ -1,0 +1,95 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+             android:orientation="vertical" 
+             android:layout_gravity="center_vertical|center_horizontal" 
+             android:layout_height="fill_parent" 
+             android:layout_width="fill_parent"
+             android:shrinkColumns="1">
+  <TableRow>
+    <TextView android:textColor="#ffffff" 
+              android:text="Checked:" 
+              android:textSize="16px" 
+              android:layout_marginLeft="6dip" 
+              android:layout_gravity="center_vertical" />
+    <CheckBox android:id="@+id/checkboxBeer" 
+              android:layout_gravity="right|top"
+              android:layout_height="wrap_content" 
+              android:layout_width="wrap_content"/>
+  </TableRow>
+  <TableRow>
+    <TextView android:layout_column="0"
+              android:textColor="#ffffff" 
+              android:text="Date:" 
+              android:textSize="16px" 
+              android:layout_marginLeft="6dip" 
+              android:layout_gravity="center_vertical"/>
+    <TextView android:layout_column="1"
+              android:id="@+id/transDate" 
+              android:textSize="16px"
+              android:padding="6dip" />
+  </TableRow>
+  <TableRow>
+    <TextView android:textColor="#ffffff" 
+              android:text="Type:" 
+              android:textSize="16px" 
+              android:layout_marginLeft="6dip" 
+              android:layout_gravity="center_vertical"/>
+    <TextView android:id="@+id/transType" 
+              android:textSize="16px"
+              android:layout_gravity="left"
+              android:padding="6dip"/>
+  </TableRow>
+  <TableRow>
+    <TextView android:textColor="#ffffff" 
+              android:text="Account:" 
+              android:textSize="16px" 
+              android:layout_marginLeft="6dip" 
+              android:layout_gravity="center_vertical"/>
+    <TextView android:id="@+id/transAccount" 
+              android:textSize="16px"
+              android:layout_gravity="left"
+              android:padding="6dip"/>
+  </TableRow>
+  <TableRow>
+    <TextView android:textColor="#ffffff" 
+              android:text="How:" 
+              android:textSize="16px" 
+              android:layout_marginLeft="6dip" 
+              android:layout_gravity="left|top"/>
+    <TextView android:id="@+id/transHow" 
+              android:textSize="16px"
+              android:padding="6dip"/>
+  </TableRow>
+  <TableRow>
+    <TextView android:textColor="#ffffff" 
+              android:text="Who:" 
+              android:textSize="16px" 
+              android:layout_marginLeft="6dip" 
+              android:layout_gravity="left|top"/>
+    <TextView android:id="@+id/transWho" 
+              android:textSize="16px"
+              android:singleLine="false"
+              android:padding="6dip"/>
+  </TableRow>
+  <TableRow>
+    <Spinner android:layout_column="1"
+             android:id="@+id/assignCategory"
+             android:prompt="@string/assign_Category" />              
+  </TableRow>    
+  <TableRow>
+    <TextView android:textColor="#ffffff" 
+              android:text="Amount:" 
+              android:textSize="16px" 
+              android:layout_marginLeft="6dip" 
+              android:layout_gravity="center_vertical"/>
+    <TextView android:id="@+id/transAmount" 
+              android:textSize="16px"
+              android:layout_marginRight="6dip"
+              android:padding="6dip"/>
+  </TableRow>  
+  <TableRow>
+    <Button android:id="@+id/buttonOK" 
+            android:text="Assign" 
+            android:layout_height="wrap_content" 
+            android:layout_width="wrap_content"/>
+  </TableRow>
+</TableLayout>
